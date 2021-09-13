@@ -1,5 +1,4 @@
 <template>
-    
     <!--Logo-->
     <section class="logo">
         <div class="google-logo">

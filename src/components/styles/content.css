@@ -22,7 +22,8 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.logo{
+
+.logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,33 +32,33 @@
     cursor: pointer;
 }
 
-.google-logo{
+.google-logo {
     display: flex;
     justify-content: center;
 }
 
-.logo .search-container{
+.logo .search-container {
     margin-top: 25px;
 }
 
-.logo .search-container form{
+.logo .search-container form {
     position: relative;
 }
 
-.logo .search-container form label.search{
+.logo .search-container form label.search {
     position: absolute;
     left: 17px;
     top: 13px;
 }
 
-.logo .search-container form label.microphone{
+.logo .search-container form label.microphone {
     position: absolute;
     right: 20px;
     top: 9px;
     cursor: pointer;
 }
 
-.logo .search-container form input{
+.logo .search-container form input {
     font-size: 16px;
     padding:  13px; 
     width: 300px;
@@ -68,17 +69,17 @@
     padding-right: 50px;
 }
 
-.logo .search-container form input:hover{
+.logo .search-container form input:hover {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 /*Buttons*/
 
-.logo .buttons{
+.logo .buttons {
     margin-top: 30px;
 }
 
-.logo .buttons button{
+.logo .buttons button {
     background-color:#F8F9FA;
     padding: 8px 15px;
     border-radius: 5px;
@@ -90,7 +91,7 @@
     color: #444647;
 }
 
-.logo .buttons button:hover{
+.logo .buttons button:hover {
     cursor:pointer;
     border: 1px solid #dadce0;
     box-shadow: 0px 1px 1px rgba(0,0,0,0.15);
@@ -98,7 +99,7 @@
 
 /*Language*/
 
-.logo .language-list{
+.logo .language-list {
     padding-top: 30px;;
     display: flex;
     flex-direction: row;
@@ -109,26 +110,34 @@
     align-items: flex-start;
 }
 
-.logo .language-list .language{
+.logo .language-list .language {
     display: flex;
     align-content: space-around;
     margin: 0px 5px;
     color: #0300a8;
 }
 
-.logo .language-list .language:hover{
+.logo .language-list .language:hover {
     text-decoration: underline;
 }
-
 
   @media (min-width: 500px) {
     .logo .search-container form input {
       width: 500px;
+
     }
   }
 
-  @media(min-width:640px){
-      .logo .search-container form input{
+  @media (max-width: 500px) {
+    .logo .google-logo img {
+      width: 70%;
+    }
+    .logo .search-container form input {
+        height:45px;
+      }
+  }
+  @media(min-width:640px) {
+      .logo .search-container form input {
           width: 580px;
       }
   }
@@ -138,7 +147,7 @@
         width: 110%;
     }
   
-    .logo .search-container form input{
+    .logo .search-container form input {
         width: 580px;
     }
 
