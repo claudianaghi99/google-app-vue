@@ -16,9 +16,9 @@
                 <label class="microphone">
                     <div class ="dropdown">
                         <img src="../assets/mic.png" alt="mic pic" class="mic-pic">
-                        <!-- <div class="dropdown-content">
+                        <div class="dropdown-content">
                             <p>Search by voice</p>
-                        </div> -->
+                        </div>
                     </div>
                 </label>
             </form>
@@ -44,6 +44,31 @@
 
 <style>
 
+
+/*Dropdown-mic*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    color: #ffffff;
+    font-family: sans-serif;
+    border-radius: 5%;
+    font-size: 13px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 .logo{
     display: flex;
     flex-direction: column;

@@ -1,5 +1,4 @@
 <template>
-    
     <!--Footer-->
     <footer class="footer">
         <div>

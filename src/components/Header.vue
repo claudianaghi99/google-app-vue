@@ -13,9 +13,9 @@
                 <div class="dropdown-apps">
                     <img src="../assets/google-apps.png" alt="google apps" class="appimg">
                    
-                    <!-- <div class="dropdown-content-apps">
+                    <div class="dropdown-content-apps">
                         <p>Google apps</p>
-                    </div> -->
+                    </div>
                 </div>
             </li>
             <li>
@@ -24,9 +24,33 @@
         </ul>
     </header>
 </template>
-<script></script>
+<script>
+</script>
 
-<style scoped>
+<style>
+
+.dropdown-apps {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content-apps {
+    display: none;
+    position: absolute;
+    background-color: #616060;
+    min-width: 107px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    color: #ffffff;
+    font-family: sans-serif;
+    border-radius: 5%;
+    font-size: 13px;
+}
+  
+.dropdown-apps:hover .dropdown-content-apps {
+    display: block;
+}
 
 .appimg{
     max-height: 32px;
