@@ -21,16 +21,31 @@ export default {
 </script>
 
 <style>
+
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
 } 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #000000DE;
+    font-size: 13px;
 }
 </style>
